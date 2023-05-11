@@ -1,0 +1,72 @@
+$primary-green: #4caf50;
+$dark-green: #689f38;
+$light-green: #cddc39;
+$background-color: #f1f8e9;
+$accent-green: #8bc34a;
+$text-dark: #292f36;
+
+$primary-font: "Jost", sans-serif;
+$accent-font: "DM Serif Display", serif;
+/* Variables */
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar {
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+
+    .language-switch {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 68px;
+
+      font-family: "Jost", serif;
+      font-size: 18px;
+      cursor: pointer;
+
+      .half {
+        font-weight: bold;
+        color: #689f38;
+      }
+    }
+  }
+
+  &__logo {
+  }
+
+  &__list {
+  }
+}
+
+.menu {
+  width: 540px;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+
+  &__item {
+    font-family: "Jost", serif;
+    font-size: 23px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #292f36;
+    transition: all 150ms ease-out;
+  }
+}
+
+.menu__link:hover {
+  color: #689f38;
+  transition: all 150ms ease-in;
+}
+
+.main {
+}
