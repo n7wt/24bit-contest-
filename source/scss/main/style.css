@@ -81,6 +81,9 @@
   cursor: default;
 }
 .main__button {
+  position: absolute;
+  top: 50%;
+  left: 22%;
   margin-top: 100px;
   padding: 0.4rem 1.5rem;
   background-color: #fff;
