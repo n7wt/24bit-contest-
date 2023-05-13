@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="source/scss/main/style.css" /> -->
+    <link rel="stylesheet" href="source/scss/reset-style.css" />
+    <link rel="stylesheet" href="source/scss/preloader.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Jost:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>GovzaDosh</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="preloader-spinner"></div>
+      <div class="preloader-text">Марша Дог1ийла!</div>
+    </div>
+
+    <button id="scrollToTopBtn" title="Вернуться наверх">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <div class="container">
+      <header class="header">
+        <nav class="navbar">
+          <div class="navbar__menu">
+            <a href="#">
+              <img width="80px" src="./media/logo.jpg" alt="" class="navbar__logo"/><span class="one">НОХЧИ</span><span class="two">☪︎</span><span class="three">ЧОЬ</span></a>
+            <div class="navbar__list">
+              <ul class="menu">
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Главная</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">История</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Культура</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Галерея</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div id="language-toggle" class="half toggle">CH</div>
+          </div>
+        </nav>
+      </header>
+
+      <main class="main">
+        <section class="main__welcome">
+          <div class="main__video-container">
+            <video
+              width="1000"
+              src="./media/chechnya_video.mp4"
+              class="main__video"
+              loop
+              id="video_chechnya"
+            ></video>
+            <div class="main__text-container">
+              <div class="main__text-animation">
+                <p class="main__title">
+                  Чечня - это <br />
+                  про
+                </p>
+                <p>
+                  <span class="word people">народ</span>
+                  <span class="word traditions">традиции</span>
+                  <span class="word history">историю</span>
+                  <span class="word beauty">природу</span>
+                  <span class="word kitchen">обычаи</span>
+                </p>
+              </div>
+            </div>
+
+            <button class="main__button">Узнать больше</button>
+          </div>
+        </section>
+
+        <section class="categories">
+          <div class="categories__container">
+            <div class="categories__card">
+              <h2 class="categories__title">История</h2>
+              <p class="categories__subtitle">
+                Познакомься с историей чеченского народа
+              </p>
+              <div class="categories__continue">
+                <a href="#" class="button-continue">Перейти</a>
+              </div>
+            </div>
+            <div class="categories__card">
+              <h2 class="categories__title">Культура</h2>
+              <p class="categories__subtitle">
+                Узнай больше об культуре и традициях Чечни
+              </p>
+              <div class="categories__continue">
+                <a href="#" class="button-continue">Перейти</a>
+              </div>
+            </div>
+            <div class="categories__card">
+              <h2 class="categories__title">Галерея</h2>
+              <p class="categories__subtitle">
+                Взгляни на достопримечательности Республики
+              </p>
+              <div class="categories__continue">
+                <a href="#" class="button-continue">Перейти</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="source/app/main.js"></script>
+    <script src="./source/components/header.js"></script>
+  </body>
+</html>
