@@ -6,7 +6,7 @@ body {
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 160px;
+  padding: 0 80px;
   background: #f1f8e9;
 }
 
@@ -52,6 +52,21 @@ body {
 .menu__link:hover {
   color: #689f38;
   transition: all 150ms ease-in;
+}
+
+.menu__link::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  background-color: #689f38;
+  border-radius: 150px;
+  margin-top: 5px;
+  transition: width 0.3s ease-in-out;
+}
+
+.menu__link:hover::after {
+  width: 100%;
 }
 
 .main__video-container {
@@ -214,14 +229,27 @@ p {
 .quote {
   margin-bottom: 120px;
 }
+.quote__media {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
 .quote__img {
   border-radius: 0 240px 0 120px;
+}
+.quote__img-info {
+  margin-top: 16px;
+  font-family: "Jost", sans-serif;
+  text-align: right;
 }
 .quote__container {
   display: flex;
   justify-content: space-between;
 }
 .quote__information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 540px;
   line-height: 28px;
 }
@@ -285,6 +313,10 @@ p {
   padding: 0 24px 0 0;
 }
 
+.statements {
+  cursor: default;
+  padding-bottom: 120px;
+}
 .statements__container {
   display: flex;
   flex-direction: column;
@@ -314,6 +346,7 @@ p {
   padding: 24px;
   border-radius: 30px;
   width: 300px;
+  cursor: default;
 }
 .statements__info {
   display: flex;
@@ -341,4 +374,65 @@ p {
 .post {
   font-size: 16px;
   font-family: "Oranienbaum", serif;
+}
+
+.partners {
+  cursor: default;
+}
+.partners__title {
+  font-size: 38px;
+  font-family: "Oranienbaum", serif;
+  text-align: center;
+  padding-bottom: 56px;
+}
+.partners__images {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.trd-line {
+  height: 4px;
+  background: #8bc34a;
+  border-radius: 150px;
+  border: none;
+  margin: 0 0 50px 0;
+}
+
+.fth-line {
+  height: 4px;
+  background: #8bc34a;
+  border-radius: 150px;
+  border: none;
+  margin: 50px 0 100px 0;
+}
+
+.grozny {
+  position: relative;
+}
+.grozny__title {
+  width: 800px;
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  line-height: 62px;
+  color: #f1f8e9;
+  font-size: 56px;
+  font-family: "Oranienbaum", serif;
+  font-weight: bold;
+}
+.grozny__subtitle {
+  margin-top: 100px;
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 40px;
+  width: 540px;
+}
+.grozny__video {
+  border-radius: 5px 180px 5px 240px;
+  filter: blur(2px);
 }/*# sourceMappingURL=style.css.map */

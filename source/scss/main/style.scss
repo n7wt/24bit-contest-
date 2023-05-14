@@ -16,7 +16,7 @@ body {
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 160px;
+  padding: 0 80px;
   background: $background-color;
 }
 
@@ -39,7 +39,7 @@ body {
 
       .half {
         font-weight: bold;
-        color: #689f38;
+        color: $dark-green;
       }
     }
   }
@@ -68,8 +68,23 @@ body {
 }
 
 .menu__link:hover {
-  color: #689f38;
+  color: $dark-green;
   transition: all 150ms ease-in;
+}
+
+.menu__link::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  background-color: $dark-green;
+  border-radius: 150px;
+  margin-top: 5px;
+  transition: width 0.3s ease-in-out;
+}
+
+.menu__link:hover::after {
+  width: 100%;
 }
 
 .main {
@@ -261,8 +276,20 @@ p {
 .quote {
   margin-bottom: 120px;
 
+  &__media {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
   &__img {
     border-radius: 0 240px 0 120px;
+  }
+
+  &__img-info {
+    margin-top: 16px;
+    font-family: $primary-font;
+    text-align: right;
   }
 
   &__container {
@@ -271,6 +298,9 @@ p {
   }
 
   &__information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 540px;
     line-height: 28px;
   }
@@ -327,6 +357,7 @@ p {
     transition: all 150ms ease-in;
   }
 }
+
 .contact-name {
   color: $text-dark;
   font-weight: bold;
@@ -345,7 +376,8 @@ p {
 }
 
 .statements {
-  // .statements__container
+  cursor: default;
+  padding-bottom: 120px;
 
   &__container {
     display: flex;
@@ -357,16 +389,12 @@ p {
     border-radius: 80px;
   }
 
-  // .statements__title
-
   &__title {
     font-family: $accent-font;
     text-align: center;
     font-size: 42px;
     margin: 50px 0 60px 0;
   }
-
-  // .statements__block
 
   &__block {
     border-radius: 80px;
@@ -377,8 +405,6 @@ p {
     margin-bottom: 50px;
   }
 
-  // .statements__card
-
   &__card {
     display: flex;
     flex-direction: column;
@@ -387,9 +413,9 @@ p {
     padding: 24px;
     border-radius: 30px;
     width: 300px;
-  }
 
-  // .statements__info
+    cursor: default;
+  }
 
   &__info {
     display: flex;
@@ -399,13 +425,6 @@ p {
 
     margin-bottom: 20px;
   }
-
-  // .statements__text
-
-  &__text {
-  }
-
-  // .statements__subtitle
 
   &__subtitle {
     font-family: $accent-font;
@@ -424,4 +443,84 @@ p {
 .post {
   font-size: 16px;
   font-family: $accent-font;
+}
+
+.partners {
+  cursor: default;
+  &__title {
+    font-size: 38px;
+    font-family: $accent-font;
+    text-align: center;
+    padding-bottom: 56px;
+  }
+
+  &__images {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
+.trd-line {
+  height: 4px;
+
+  background: $accent-green;
+  border-radius: 150px;
+  border: none;
+  margin: 0 0 50px 0;
+}
+
+.fth-line {
+  height: 4px;
+
+  background: $accent-green;
+  border-radius: 150px;
+  border: none;
+  margin: 50px 0 100px 0;
+}
+
+.grozny {
+  position: relative;
+
+  &__title {
+    width: 800px;
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    line-height: 62px;
+
+    color: $background-color;
+    font-size: 56px;
+    font-family: $accent-font;
+    font-weight: bold;
+  }
+
+  // .grozny__subtitle
+  &__subtitle {
+    margin-top: 100px;
+    font-family: $primary-font;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 40px;
+
+    width: 540px;
+  }
+
+  &__subtitle::first-letter {
+    font-size: 40px;
+    font-weight: bold;
+    float: left;
+    margin: 0 10px 0 -10px;
+    color: $accent-color;
+  }
+
+  // .grozny__video
+
+  &__video {
+    border-radius: 5px 180px 5px 240px;
+    filter: blur(2px);
+  }
 }
