@@ -76,13 +76,9 @@
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: #f1f8e9;
+  background-color: #4caf50;
   color: white;
   cursor: pointer;
   padding: 15px;
   border-radius: 150px;
-}
-
-body {
-  height: 5000px;
 }
