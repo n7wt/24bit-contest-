@@ -314,6 +314,7 @@ p {
 }
 
 .statements {
+  color: #1f2429;
   cursor: default;
   padding-bottom: 120px;
 }
@@ -380,6 +381,7 @@ p {
   cursor: default;
 }
 .partners__title {
+  color: #1f2429;
   font-size: 38px;
   font-family: "Oranienbaum", serif;
   text-align: center;
@@ -408,12 +410,23 @@ p {
 }
 
 .grozny {
+  color: #1f2429;
   position: relative;
+}
+.grozny__roadmap-block {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.grozny__roadmap-text {
+  width: 540px;
 }
 .grozny__title {
   width: 800px;
   position: absolute;
-  top: 25%;
+  top: 8%;
   left: 40%;
   transform: translate(-50%, -50%);
   z-index: 1;
@@ -422,17 +435,151 @@ p {
   font-size: 56px;
   font-family: "Oranienbaum", serif;
   font-weight: bold;
+  cursor: default;
 }
-.grozny__subtitle {
-  margin-top: 100px;
+.grozny .war-time__title {
+  font-family: "Oranienbaum", serif;
+  font-size: 32px;
+  margin-bottom: 26px;
+}
+.grozny .war-time__subtitle {
   font-family: "Jost", sans-serif;
   font-size: 18px;
   line-height: 1.5;
   color: #333;
-  margin-bottom: 40px;
   width: 540px;
 }
 .grozny__video {
   border-radius: 5px 180px 5px 240px;
   filter: blur(2px);
+}
+
+.roadmap__img {
+  border-radius: 40px;
+}
+
+.post-war {
+  color: #1f2429;
+}
+.post-war__title {
+  font-family: "Oranienbaum", serif;
+  font-size: 32px;
+  margin-bottom: 26px;
+}
+.post-war__subtitle {
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.modern-grozny {
+  color: #1f2429;
+}
+.modern-grozny__roadmap-block {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.modern-grozny__title {
+  font-family: "Oranienbaum", serif;
+  font-size: 32px;
+  margin-bottom: 26px;
+}
+.modern-grozny__subtitle {
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.ffth-line {
+  height: 4px;
+  background: #8bc34a;
+  border-radius: 150px;
+  border: none;
+  margin: 60px 0 0 0;
+}
+
+.before-after {
+  margin-bottom: 40px;
+}
+.before-after__title {
+  font-family: "Oranienbaum", serif;
+  font-size: 42px;
+  margin: 40px 0 42px 0;
+  text-align: center;
+}
+.before-after__video {
+  border-radius: 50px 380px 50px 360px;
+}
+.before-after__video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.before-after__video {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.sxth-line {
+  height: 4px;
+  background: #8bc34a;
+  border-radius: 150px;
+  border: none;
+  margin: 0 0 60px 0;
+}
+
+.subscribe__container {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 800px;
+  height: 450px;
+  border-radius: 100px;
+  background-color: rgba(104, 159, 56, 0.5803921569);
+  padding: 20px;
+}
+.subscribe__title {
+  font-family: "Oranienbaum", serif;
+  font-size: 50px;
+}
+.subscribe__subtitle {
+  font-family: "Jost", sans-serif;
+  margin: 12px 0 24px;
+}
+.subscribe__input {
+  margin: 0 auto 36px;
+  font-family: "Jost", sans-serif;
+  font-size: 1em;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  width: 400px;
+}
+.subscribe__button {
+  font-family: "Jost", sans-serif;
+  font-size: 1em;
+  border: none;
+  background-color: rgba(104, 159, 56, 0.5803921569);
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #f1f8e9;
+  cursor: pointer;
+  width: 300px;
+  margin: 0 auto 0;
+  transition: all 150ms ease-out;
+}
+.subscribe__button:hover {
+  transform: scale(1.2);
+  transition: all 100ms ease-in;
+}
+.subscribe__input.invalid {
+  border: 2px solid red;
 }/*# sourceMappingURL=style.css.map */

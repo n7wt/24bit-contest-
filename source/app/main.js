@@ -98,3 +98,24 @@ function splitLetters(word) {
 
 changeWord();
 setInterval(changeWord, 4000);
+
+const emailInput = document.querySelector(".subscribe__input");
+
+function validateEmail(email) {
+  const re = /\S+@\S+\.\S+/;
+  return re.test(email);
+}
+
+function handleInput() {
+  if (validateEmail(emailInput.value)) {
+    emailInput.style.border = "5px solid #8bc34a";
+  } else {
+    emailInput.style.border = "2px solid red";
+  }
+}
+
+emailInput.addEventListener("input", handleInput);
+emailInput.addEventListener("focus", () => {
+  emailInput.style.outline = "none";
+});
+emailInput.addEventListener("blur", handleInput);
