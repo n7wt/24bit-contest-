@@ -1,3 +1,4 @@
+// Прелоадер
 window.addEventListener("load", function () {
   var preloader = document.querySelector(".preloader");
   setTimeout(function () {
@@ -19,13 +20,34 @@ window.addEventListener("load", function () {
     preloader.style.display = "none";
   }, 2500);
 });
+// ----
 
+// lang-switcher
+const switcher = document.querySelector(".language-switch");
+
+switcher.addEventListener("click", function () {
+  const active = switcher.querySelector(".active");
+  const ru = switcher.querySelector(".ru");
+  const ch = switcher.querySelector(".ch");
+
+  if (active === ru) {
+    ru.classList.remove("active");
+    ch.classList.add("active");
+  } else {
+    ch.classList.remove("active");
+    ru.classList.add("active");
+  }
+});
+
+// autoplay
 const myVideo = document.getElementById("video_chechnya");
 
 window.addEventListener("load", function () {
   myVideo.play();
 });
+// ----
 
+// autoscroll
 let scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
 window.addEventListener("scroll", () => {
@@ -42,7 +64,9 @@ scrollToTopBtn.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+// ----
 
+// title animation
 var words = document.getElementsByClassName("word");
 var wordArray = [];
 var currentWord = 0;
@@ -98,24 +122,40 @@ function splitLetters(word) {
 
 changeWord();
 setInterval(changeWord, 4000);
+// -------
+
+// email validation / modal-window
 
 const emailInput = document.querySelector(".subscribe__input");
+const subscribeButton = document.querySelector(".subscribe__button");
 
-function validateEmail(email) {
-  const re = /\S+@\S+\.\S+/;
-  return re.test(email);
+function isValidEmail(email) {
+  return /\S+@\S+\.\S+/.test(email);
 }
 
-function handleInput() {
-  if (validateEmail(emailInput.value)) {
-    emailInput.style.border = "5px solid #8bc34a";
+subscribeButton.addEventListener("click", () => {
+  const email = emailInput.value;
+  if (isValidEmail(email)) {
+    showModal("Поздравляю! Вы успешно подписались на рассылку.");
   } else {
-    emailInput.style.border = "2px solid red";
+    showModal("Почта недействительна! Попробуйте заново.");
   }
-}
-
-emailInput.addEventListener("input", handleInput);
-emailInput.addEventListener("focus", () => {
-  emailInput.style.outline = "none";
 });
-emailInput.addEventListener("blur", handleInput);
+
+function showModal(message, isSuccess) {
+  const modal = document.createElement("div");
+  modal.classList.add("modal");
+  const contentClass = isSuccess
+    ? "modal__content--success"
+    : "modal__content--error";
+  modal.innerHTML = `<div class="modal__content ${contentClass}">
+                        <p class="modal__message">${message}</p>
+                        <button class="modal__close-button">Закрыть</button>
+                      </div>`;
+  document.body.appendChild(modal);
+  const closeButton = modal.querySelector(".modal__close-button");
+  closeButton.addEventListener("click", () => {
+    modal.remove();
+  });
+}
+// -----
