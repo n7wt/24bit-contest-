@@ -159,3 +159,16 @@ function showModal(message, isSuccess) {
   });
 }
 // -----
+
+const video = document.querySelector(".before-after__video");
+const button = document.querySelector(".before-after__video-button");
+
+button.addEventListener("click", function () {
+  if (video.muted) {
+    video.muted = false;
+    button.classList.remove("muted");
+  } else {
+    video.muted = true;
+    button.classList.add("muted");
+  }
+});

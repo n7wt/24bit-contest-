@@ -50,6 +50,7 @@ body {
   color: #1f2429;
   font-family: "Oswald", sans-serif;
   font-size: 42px;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
 }
 
 .menu {
@@ -535,6 +536,33 @@ p {
   width: 100%;
   max-width: 1200px;
 }
+.before-after__video-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  background: #8bc34a;
+  height: 80px;
+  width: 80px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
+  font-size: 28px;
+  color: #fff;
+  box-shadow: 5px 6px 8px 0px rgba(34, 60, 80, 0.2);
+  transition: all 200ms ease-out;
+}
+.before-after__video-button.muted:before {
+  border-left: 10px solid #333;
+  border-right: 10px solid #333;
+}
+.before-after__video-button:hover {
+  transform: scale(1.2);
+  transition: all 200ms ease-in;
+}
 
 .sxth-line {
   height: 4px;
@@ -610,6 +638,7 @@ p {
   font-family: "Oswald", sans-serif;
   font-size: 62px;
   cursor: pointer;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
 }
 .footer__slogan {
   text-align: center;
