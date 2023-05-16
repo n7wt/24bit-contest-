@@ -1,0 +1,98 @@
+@import url(../../scss/drawable/variables.scss);
+
+.header {
+  border-bottom: 4px solid $primary-green;
+}
+.navbar {
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+
+    .language-switch {
+      user-select: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 68px;
+      font-family: $primary-font;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .language-switch .half {
+      font-weight: bold;
+      color: $dark-green;
+    }
+
+    .language-switch .active {
+      color: $primary-green;
+    }
+
+    .language-switch .ch.active {
+      color: $dark-green;
+    }
+
+    .language-switch .ch:not(.active) {
+      opacity: 0.2;
+    }
+
+    .language-switch .ru:not(.active) {
+      opacity: 0.2;
+    }
+  }
+
+  &__logo {
+    cursor: pointer;
+    text-decoration: none;
+    color: $text-dark;
+    font-family: $accent-font;
+    font-size: 42px;
+
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    color: #258129;
+
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.menu {
+  width: 540px;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+
+  &__item {
+    font-family: $primary-font;
+    font-size: 23px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #292f36;
+    transition: all 150ms ease-out;
+  }
+}
+
+.menu__link:hover {
+  color: $dark-green;
+  transition: all 150ms ease-in;
+}
+
+.menu__link:hover::after {
+  width: 100%;
+}
+
+.menu__link::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  background-color: $dark-green;
+  border-radius: 150px;
+  margin-top: 5px;
+  transition: width 0.3s ease-in-out;
+}
