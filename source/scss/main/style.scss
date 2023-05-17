@@ -1,9 +1,17 @@
-@import url(../drawable/variables.scss);
+$primary-green: #4caf50;
+$dark-green: #689f38;
+$light-green: #cddc39;
+$background-color: #f1f8e9;
+$accent-green: #8bc34a;
+$text-dark: #1f2429;
+
+$primary-font: "Jost", sans-serif;
+$accent-font: "Oswald", sans-serif;
+/* Variables */
 
 body {
-  background-color: $background-color;
   overflow-x: hidden;
-  background-image: url(../../../media/ornament-green.png);
+  background-image: url(../../../media/ornament.jpg);
   background-size: 500px;
   background-repeat: repeat;
 }

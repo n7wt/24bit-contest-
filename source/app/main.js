@@ -39,14 +39,6 @@ switcher.addEventListener("click", function () {
   }
 });
 
-// autoplay
-const myVideo = document.getElementById("video_chechnya");
-
-window.addEventListener("load", function () {
-  myVideo.play();
-});
-// ----
-
 // autoscroll
 let scrollToTopBtn = document.getElementById("scrollToTopBtn");
 

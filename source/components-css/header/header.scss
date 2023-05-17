@@ -1,7 +1,16 @@
-@import url(../../scss/drawable/variables.scss);
+$primary-green: #4caf50;
+$dark-green: #689f38;
+$light-green: #cddc39;
+$background-color: #f1f8e9;
+$accent-green: #8bc34a;
+$text-dark: #1f2429;
+
+$primary-font: "Jost", sans-serif;
+$accent-font: "Oswald", sans-serif;
+/* Variables */
 
 .header {
-  border-bottom: 4px solid $primary-green;
+  border-bottom: 4px solid $accent-green;
 }
 .navbar {
   &__menu {
@@ -19,6 +28,11 @@
       font-family: $primary-font;
       font-size: 18px;
       cursor: pointer;
+
+      .slash {
+        color: $primary-green;
+        font-weight: bold;
+      }
     }
 
     .language-switch .half {

@@ -1,22 +1,3 @@
-@import url(../drawable/variables.scss);
-
-body {
-  background-color: $background-color;
-  overflow-x: hidden;
-  background-image: url(../../../media/ornament-green.png);
-  background-size: 500px;
-  background-repeat: repeat;
-}
-
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 80px;
-  background: $background-color;
-  box-shadow: 0px 0px 30px #22222290;
-}
-
-/* SCSS Variables */
 $primary-green: #4caf50;
 $dark-green: #689f38;
 $light-green: #cddc39;
@@ -24,15 +5,15 @@ $background-color: #f1f8e9;
 $accent-green: #8bc34a;
 $text-dark: #1f2429;
 
-/* SCSS Styles */
+$primary-font: "Jost", sans-serif;
+$accent-font: "Oswald", sans-serif;
+/* Variables */
+
 body {
-  background-color: $background-color;
   overflow-x: hidden;
-  background-image: url(../../../media/ornament-green.png);
+  background-image: url(../../../media/ornament.jpg);
   background-size: 500px;
   background-repeat: repeat;
-  font-family: $primary-font;
-  color: $text-dark;
 }
 
 .container {

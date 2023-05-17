@@ -1,6 +1,6 @@
 /* Variables */
 .header {
-  border-bottom: 4px solid #4caf50;
+  border-bottom: 4px solid #8bc34a;
 }
 
 .navbar__menu {
@@ -20,6 +20,10 @@
   font-family: "Jost", sans-serif;
   font-size: 18px;
   cursor: pointer;
+}
+.navbar__menu .language-switch .slash {
+  color: #4caf50;
+  font-weight: bold;
 }
 .navbar__menu .language-switch .half {
   font-weight: bold;

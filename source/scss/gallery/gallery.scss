@@ -1,0 +1,150 @@
+$primary-green: #4caf50;
+$dark-green: #689f38;
+$light-green: #cddc39;
+$background-color: #f1f8e9;
+$accent-green: #8bc34a;
+$text-dark: #1f2429;
+
+$primary-font: "Jost", sans-serif;
+$accent-font: "Oswald", sans-serif;
+/* Variables */
+
+body {
+  overflow-x: hidden;
+  background-image: url(../../../media/ornament.jpg);
+  background-size: 500px;
+  background-repeat: repeat;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 80px;
+  background: #f1f8e9;
+  box-shadow: 0px 0px 30px #22222290;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 150px;
+}
+
+.swiper-slide img {
+  border-radius: 0 0 150px 0;
+  display: block;
+  object-fit: cover;
+}
+
+.gallery {
+  margin: 50px 0 80px;
+
+  &__title {
+    font-size: 36px;
+    font-family: $accent-font;
+    text-align: center;
+  }
+
+  &__subtitle {
+    width: 700px;
+    margin: 24px auto 0;
+    font-size: 20px;
+    font-family: $primary-font;
+    text-align: justify;
+  }
+}
+
+.fst-line {
+  height: 4px;
+
+  background: $accent-green;
+  border-radius: 150px;
+  border: none;
+  margin: 80px 0 30px 0;
+}
+
+.snd-line {
+  height: 4px;
+
+  background: $accent-green;
+  border-radius: 150px;
+  border: none;
+  margin: 30px 0 30px 0;
+}
+
+.footer {
+  margin: 30px 0 30px 0 !important;
+}
+
+.cards {
+  margin-bottom: 120px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__img {
+    object-fit: cover;
+    border-radius: 100px;
+  }
+
+  &__info {
+    width: 450px;
+    margin-top: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__text {
+    text-align: left;
+    line-height: 25px;
+  }
+
+  &__name {
+    font-family: $accent-font;
+    font-size: 18px;
+  }
+
+  &__subtitle {
+    font-family: $primary-font;
+    font-size: 15px;
+  }
+
+  &__link {
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: $primary-font;
+    font-weight: bold;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: none;
+    border: none;
+
+    background-color: $accent-green;
+
+    text-decoration: none;
+    color: #1f2429;
+    color: $background-color;
+  }
+}

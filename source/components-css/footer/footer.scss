@@ -1,4 +1,13 @@
-@import url(../../scss/drawable/variables.scss);
+$primary-green: #4caf50;
+$dark-green: #689f38;
+$light-green: #cddc39;
+$background-color: #f1f8e9;
+$accent-green: #8bc34a;
+$text-dark: #1f2429;
+
+$primary-font: "Jost", sans-serif;
+$accent-font: "Oswald", sans-serif;
+/* Variables */
 
 .footer {
   margin: 100px auto 60px;

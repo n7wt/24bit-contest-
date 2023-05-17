@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="components-css/header.css" />
+    <link rel="stylesheet" href="../scss/preloader.css" />
+    <link rel="stylesheet" href="../scss/reset-style.css" />
+    <link rel="stylesheet" href="../scss/gallery/gallery.css" />
+    <link rel="stylesheet" href="../components-css/footer/footer.css" />
+    <link rel="stylesheet" href="../components-css/header/header.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Jost:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-pI2kGk0OJ5OiVfY+COeM8FDEHXdZmZ1qsCzP1EFcY1+XT4M7nLzr9g7iJQrcjngyM0mqbKmeHa79oDRIaWKO2w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Галерея</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <nav class="navbar">
+          <div class="navbar__menu">
+            <a href="../../index.html" class="navbar__logo">DAYMOXK☪︎</a>
+            <div class="navbar__list">
+              <ul class="menu">
+                <li class="menu__item">
+                  <a href="../../index.html" class="menu__link">Главная</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">История</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Культура</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Галерея</a>
+                </li>
+                <li class="menu__item">
+                  <a href="./gallery.html" class="menu__link">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="language-switch">
+              <span class="ru half active">RU</span> <i class="slash">|</i>
+              <span class="ch half">CH</span>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <div class="gallery">
+          <h2 class="gallery__title">Галерея</h2>
+          <p class="gallery__subtitle">
+            Погрузитесь в удивительный мир истории, культуры и природы Чечни
+            через коллекцию уникальных фотографий. От величественных горных
+            пейзажей до исторических архитектурных шедевров, наши изображения
+            позволят вам увидеть и почувствовать красоту этой земли.
+          </p>
+        </div>
+
+        <div class="cards">
+          <div class="cards__item">
+            <img
+              class="cards__img"
+              width="500px"
+              height="500px"
+              src="../../media/heart_of_chechnya.jpeg"
+              alt=""
+            />
+            <div class="cards__info">
+              <div class="cards__text">
+                <h3 class="cards__name">
+                  Мечеть "Сердце Чечни" им. Ахмата-Хаджи Кадырова
+                </h3>
+                <p class="cards__subtitle">
+                  Одна из самых масштабных мечетей Европы
+                </p>
+              </div>
+              <a href="#" class="cards__link">
+                <i class="fas fa-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="cards__item">
+            <img
+              class="cards__img"
+              width="500px"
+              height="500px"
+              src="../../media/gallery-cards/grozny-city.jpg"
+              alt=""
+            />
+            <div class="cards__info">
+              <div class="cards__text">
+                <h3 class="cards__name">
+                  Комплекс небоскребов — "Грозный-Сити"
+                </h3>
+                <p class="cards__subtitle">
+                  Высотный комплекс состоящий из 7 зданий
+                </p>
+              </div>
+              <a href="#" class="cards__link">
+                <i class="fas fa-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="cards__item">
+            <img
+              class="cards__img"
+              width="500px"
+              height="500px"
+              src="../../media/gallery-cards/museum.jpg"
+              alt=""
+            />
+            <div class="cards__info">
+              <div class="cards__text">
+                <h3 class="cards__name">Музей им. Ахмата-Хаджи Кадырова</h3>
+                <p class="cards__subtitle">
+                  Мемориал посвященный первому Президенту ЧР
+                </p>
+              </div>
+              <a href="#" class="cards__link">
+                <i class="fas fa-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="cards__item">
+            <img
+              class="cards__img"
+              width="500px"
+              height="500px"
+              src="../../media/gallery-cards/theatre.jpg"
+              alt=""
+            />
+            <div class="cards__info">
+              <div class="cards__text">
+                <h3 class="cards__name">
+                  Драматический театр им. М.Ю.Лермонтова
+                </h3>
+                <p class="cards__subtitle">
+                  Театр, основанный в 1904 году, расположен в Грозном
+                </p>
+              </div>
+
+              <a href="#" class="cards__link">
+                <i class="fas fa-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                class="swiper__img"
+                width="1200px"
+                height="750px"
+                src="../../media/carousel-img/carousel1.jpg"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                width="1200px"
+                height="750px"
+                src="../../media/carousel-img/carousel2.jpg"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                width="1200px"
+                height="750px"
+                src="../../media/carousel-img/carousel3.jpg"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                width="1200px"
+                height="750px"
+                src="../../media/carousel-img/carousel4.jpg"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                width="1200px"
+                height="750px"
+                src="../../media/carousel-img/carousel5.jpg"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                width="1200px"
+                height="750px"
+                src="../../media/carousel-img/carousel6.jpg"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                width="1200px"
+                height="750px"
+                src="../../media/carousel-img/carousel7.jpg"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                width="1200px"
+                height="750px"
+                src="../../media/carousel-img/carousel8.jpg"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                width="1200px"
+                height="750px"
+                src="../../media/carousel-img/carousel9.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <hr class="fst-line" />
+      <footer class="footer">
+        <div class="footer__column">
+          <a href="#" class="footer__logo">DAYMOXK☪︎</a>
+          <p class="footer__slogan">
+            Откройте для себя <br />
+            историю чеченского народа
+          </p>
+        </div>
+        <div class="footer__column">
+          <h3 class="footer__title">Страницы</h3>
+          <ul class="footer__menu">
+            <li class="footer__item">
+              <a class="footer__links" href="#">Главная</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__links" href="#">История</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__links" href="#">Культура</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__links" href="#">Галерея</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__links" href="./gallery.html">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <h3 class="footer__title">Контакты</h3>
+          <ul class="footer__contacts">
+            <li class="footer__item">
+              Чеченская Республика, <br />
+              г. Грозный, ул. Умара Димаева
+            </li>
+            <li class="footer__item">daymoxk@email.com</li>
+            <li class="footer__item">+7 (938) 000 99-99</li>
+          </ul>
+        </div>
+      </footer>
+      <hr class="snd-line" />
+      <p class="copyright">Copyright © DAYMOXK☪︎ | Салангириев Амирхан. 2023</p>
+      <script src="/source/app/main.js"></script>
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          loop: true,
+        });
+      </script>
+    </div>
+  </body>
+</html>
