@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="components-css/header.css" />
+    <link rel="stylesheet" href="../scss/preloader.css" />
+    <link rel="stylesheet" href="../scss/reset-style.css" />
+    <link rel="stylesheet" href="../scss/culture/culture.css" />
+    <link rel="stylesheet" href="../components-css/footer/footer.css" />
+    <link rel="stylesheet" href="../components-css/header/header.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha384-MaDEeXkaFzhBLxHDqJFgs5bFqV4gNO6pk4UR4nIlUf8eN3vPfDHH3i/7Tw94K9Eb"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Jost:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <title>Культура</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <nav class="navbar">
+          <div class="navbar__menu">
+            <a href="../../index.html" class="navbar__logo">DAYMOXK☪︎</a>
+            <div class="navbar__list">
+              <ul class="menu">
+                <li class="menu__item">
+                  <a href="../../index.html" class="menu__link">Главная</a>
+                </li>
+                <li class="menu__item">
+                  <a href="./history.html" class="menu__link">История</a>
+                </li>
+                <li class="menu__item">
+                  <a href="./culture.html" class="menu__link">Культура</a>
+                </li>
+                <li class="menu__item">
+                  <a href="./gallery.html" class="menu__link">Галерея</a>
+                </li>
+                <li class="menu__item">
+                  <a href="./contacts.html" class="menu__link">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="language-switch">
+              <span class="ru half active">RU</span> <i class="slash">|</i>
+              <span class="ch half">CH</span>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <div class="culture">
+          <h1 class="culture__title">Культура</h1>
+          <p class="culture__subtitle">
+            Погрузитесь в захватывающее путешествие по различным театрам и
+            музеям, расположенным в Чеченской Республике. Откройте для себя мир
+            чеченской культуры через уникальные представления и шоу,
+            представленные на этих сценах, а так же посетите музеи Чеченской
+            Республики, что воссоздают уникальную картину прошлого и приглашают
+            вас на увлекательное путешествие по истории и культуре нашего
+            народа.
+          </p>
+        </div>
+
+        <div class="theaters__block">
+          <div class="theaters__card">
+            <img
+              width="500px"
+              height="500px"
+              src="../../media/theatre_of_Hanpasha.JPG"
+              alt=""
+              class="theaters__img"
+            />
+            <div class="theaters__text">
+              <h2 class="theaters__title">
+                Чеченский драматический театр им. Ханпаши Нурадилова
+              </h2>
+              <p class="theaters__subtitle">
+                Чеченский драматический театр имени Ханпаши Нурадилова - это
+                непревзойденное место, где искусство оживает и культурное
+                наследие Чеченской Республики оживает на сцене. Театр славится
+                своими уникальными и захватывающими постановками, которые
+                отражают богатую историю, традиции и дух народа Чечни.
+                Великолепные актеры Чеченского драматического театра воплощают
+                на сцене яркие и глубокие персонажи, передавая эмоции и истории,
+                которые оставляют неизгладимое впечатление на зрителей.
+                Постановки театра проникнуты страстью, силой и искренностью,
+                которые увлекают зрителей в мир искусства и вызывают глубокое
+                сопереживание. Чеченский драматический театр имени Ханпаши
+                Нурадилова является местом, где встречаются история, культура и
+                талант. Он приглашает всех ценителей театра и любителей
+                искусства на захватывающее путешествие в мир чеченской драмы,
+                где каждая постановка становится незабываемым и глубоким опытом.
+              </p>
+
+              <div class="theaters__buttons">
+                <a
+                  target="_blank"
+                  href="http://www.teatrnuradilova.ru/"
+                  class="theaters__link"
+                  >Перейти к официальному ресурсу</a
+                >
+                <button id="theater-info-button" class="btn btn-info">
+                  Связаться
+                </button>
+              </div>
+            </div>
+            <div class="modal" id="theater-info-modal">
+              <div class="modal__content">
+                <span class="modal__close">&times;</span>
+                <div class="modal__message">
+                  <h3 class="modal__title">
+                    Чеченский драматический театр им. Ханпаши Нурадилова
+                  </h3>
+                  <div class="modal__info">
+                    <p class="modal__item">
+                      Адрес: г.Грозный, ул. Германа Угрюмова, 73
+                    </p>
+                    <p class="modal__item">Телефон: +7 (929) 890-22-94</p>
+                    <p class="modal__item">Почта: theatrenuradilova@mail.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                class="swiper__img"
+                width="1200px"
+                height="750px"
+                src="../../media/carousel-img/carousel1.jpg"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                width="1200px"
+                height="750px"
+                src="../../media/carousel-img/carousel2.jpg"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                width="1200px"
+                height="750px"
+                src="../../media/carousel-img/carousel3.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <hr class="fst-line" />
+      <footer class="footer">
+        <div class="footer__column">
+          <a href="#" class="footer__logo">DAYMOXK☪︎</a>
+          <p class="footer__slogan">
+            Откройте для себя <br />
+            историю чеченского народа
+          </p>
+        </div>
+        <div class="footer__column">
+          <h3 class="footer__title">Страницы</h3>
+          <ul class="footer__menu">
+            <li class="footer__item">
+              <a class="footer__links" href="../../index.html">Главная</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__links" href="./history.html">История</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__links" href="./culture.html">Культура</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__links" href="./gallery.html">Галерея</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__links" href="./contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <h3 class="footer__title">Контакты</h3>
+          <ul class="footer__contacts">
+            <li class="footer__item">
+              Чеченская Республика, <br />
+              г. Грозный, ул. Умара Димаева
+            </li>
+            <li class="footer__item">daymoxk@email.com</li>
+            <li class="footer__item">+7 (938) 000 99-99</li>
+          </ul>
+        </div>
+      </footer>
+      <hr class="snd-line" />
+      <p class="copyright">Copyright © DAYMOXK☪︎ | Салангириев Амирхан. 2023</p>
+    </div>
+
+    <script src="../app/main.js"></script>
+    <script>
+      const theaterInfoButton = document.getElementById("theater-info-button");
+      const theaterInfoModal = document.getElementById("theater-info-modal");
+      const modalMessage = theaterInfoModal.querySelector(".modal__message");
+
+      theaterInfoButton.addEventListener("click", () => {
+        theaterInfoModal.style.display = "block";
+      });
+
+      theaterInfoModal.addEventListener("click", (event) => {
+        if (
+          event.target === theaterInfoModal ||
+          event.target.classList.contains("modal__close")
+        ) {
+          theaterInfoModal.style.display = "none";
+        }
+      });
+    </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
+
+<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d610.1908340051348!2d45.68343199725416!3d43.32319475469021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4051d3dc16620901%3A0x5533a38feb753eba!2z0KLQtdCw0YLRgNCw0LvRjNC90L4g0LrQvtC90YbQtdGA0YLQvdGL0Lkg0LfQsNC7!5e0!3m2!1sru!2sru!4v1684440398071!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
