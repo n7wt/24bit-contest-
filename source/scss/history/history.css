@@ -12,4 +12,37 @@ body {
   padding: 0 80px;
   background: #f1f8e9;
   box-shadow: 0px 0px 30px rgba(34, 34, 34, 0.5647058824);
+}
+
+.error {
+  margin: 120px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.error__title {
+  font-size: 56px;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+}
+.error__subtitle {
+  font-size: 24px;
+  font-family: "Jost", sans-serif;
+  text-align: center;
+  margin: 42px 0;
+}
+.error__back {
+  text-decoration: none;
+  color: #1f2429;
+  padding: 12px;
+  background-color: #8bc34a;
+  border-radius: 120px;
+  font-weight: bold;
+  font-family: "Jost", sans-serif;
+  transition: all 150ms ease-out;
+}
+.error__back:hover {
+  transform: scale(1.2);
+  transition: all 150ms ease-in;
 }/*# sourceMappingURL=history.css.map */

@@ -24,3 +24,48 @@ body {
   -webkit-box-shadow: 0px 0px 30px #22222290;
   box-shadow: 0px 0px 30px #22222290;
 }
+
+.error {
+  margin: 120px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // .error__title
+
+  &__title {
+    font-size: 56px;
+    font-family: $accent-font;
+    text-align: center;
+  }
+
+  // .error__subtitle
+
+  &__subtitle {
+    font-size: 24px;
+    font-family: $primary-font;
+    text-align: center;
+
+    margin: 42px 0;
+  }
+
+  // .error__back
+
+  &__back {
+    text-decoration: none;
+    color: $text-dark;
+    padding: 12px;
+    background-color: $accent-green;
+    border-radius: 120px;
+
+    font-weight: bold;
+    font-family: $primary-font;
+
+    transition: all 150ms ease-out;
+  }
+
+  &__back:hover {
+    transform: scale(1.2);
+    transition: all 150ms ease-in;
+  }
+}
