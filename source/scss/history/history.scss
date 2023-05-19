@@ -1,0 +1,26 @@
+$primary-green: #4caf50;
+$dark-green: #689f38;
+$light-green: #cddc39;
+$background-color: #f1f8e9;
+$accent-green: #8bc34a;
+$text-dark: #1f2429;
+
+$primary-font: "Jost", sans-serif;
+$accent-font: "Oswald", sans-serif;
+/* Variables */
+
+body {
+  overflow-x: hidden;
+  background-image: url(../../../media/ornament.jpg);
+  background-size: 500px;
+  background-repeat: repeat;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 80px;
+  background: #f1f8e9;
+  -webkit-box-shadow: 0px 0px 30px #22222290;
+  box-shadow: 0px 0px 30px #22222290;
+}

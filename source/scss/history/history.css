@@ -1,0 +1,15 @@
+/* Variables */
+body {
+  overflow-x: hidden;
+  background-image: url(../../../media/ornament.jpg);
+  background-size: 500px;
+  background-repeat: repeat;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 80px;
+  background: #f1f8e9;
+  box-shadow: 0px 0px 30px rgba(34, 34, 34, 0.5647058824);
+}/*# sourceMappingURL=history.css.map */

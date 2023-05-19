@@ -33,7 +33,7 @@ body {
   border-radius: 0 0 150px 0;
   display: block;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .gallery {
@@ -87,7 +87,7 @@ body {
 }
 .cards__img {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 100px;
 }
 .cards__info {

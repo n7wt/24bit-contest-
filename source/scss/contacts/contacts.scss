@@ -21,6 +21,7 @@ body {
   margin: 0 auto;
   padding: 0 80px;
   background: $background-color;
+  -webkit-box-shadow: 0px 0px 30px #22222290;
   box-shadow: 0px 0px 30px #22222290;
 }
 
@@ -43,16 +44,25 @@ body {
 .contact {
   margin-top: 80px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 
   &__block {
     width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 
   &__info {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     padding: 0 20px;
     margin-bottom: 20px;

@@ -54,7 +54,7 @@ body {
 }
 .theaters__img {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 100px;
   margin-bottom: 80px;
 }
@@ -210,7 +210,7 @@ body {
   width: 1200px;
   height: 800px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .swiper-slide {
@@ -229,5 +229,5 @@ body {
   border-radius: 0 0 150px 150px;
   display: block;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }/*# sourceMappingURL=culture.css.map */

@@ -1,4 +1,3 @@
-// Прелоадер
 window.addEventListener("load", function () {
   var preloader = document.querySelector(".preloader");
   setTimeout(function () {

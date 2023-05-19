@@ -56,7 +56,7 @@ body {
   transition: all 200ms ease-out;
 }
 .main__button:hover {
-  transform: scale(1.4);
+  transform: scale(1.2);
   transition: all 150ms ease-in;
 }
 
@@ -65,14 +65,14 @@ p {
   vertical-align: top;
   margin: 0;
   -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 
 .word {
   -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  user-select: none;
   font-family: "Oswald", sans-serif;
   color: #fff;
   font-size: 6rem;
@@ -228,8 +228,8 @@ p {
   transition: all 250ms ease-out;
   cursor: pointer;
   -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 .quote__button-link:hover {
   transform: scale(1.2);
