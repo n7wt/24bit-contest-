@@ -191,47 +191,56 @@ body {
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
-}
 
-.modal__content {
-  background-color: #fff;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-  max-width: 500px;
-  position: relative;
-}
+  &__content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 800px;
+    height: 800px;
+    position: relative;
+  }
 
-.modal__close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
-}
+  &__close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
 
-.modal__close:hover,
-.modal__close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
+  &__close:hover,
+  &__close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
-.modal__message {
-  margin-bottom: 20px;
-  text-align: left;
-}
+  &__message {
+    margin-bottom: 20px;
+    text-align: left;
+  }
 
-.modal__title {
-  font-size: 26px;
-  font-family: $accent-font;
-  margin-bottom: 24px;
-}
-.modal__info {
-  font-size: 22px;
-  font-family: $primary-font;
-  line-height: 30px;
+  &__title {
+    font-size: 32px;
+    font-family: $accent-font;
+    margin-bottom: 24px;
+  }
+  &__info {
+    font-size: 22px;
+    font-family: $primary-font;
+    line-height: 30px;
+
+    margin-bottom: 80px;
+  }
+
+  &__card-title {
+    font-size: 32px;
+    text-align: center;
+    font-family: $accent-font;
+    margin-bottom: 20px;
+  }
 }
 
 .swiper {

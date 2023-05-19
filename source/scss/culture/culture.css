@@ -163,17 +163,15 @@ body {
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
 }
-
 .modal__content {
   background-color: #fff;
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
-  max-width: 500px;
+  width: 800px;
+  height: 800px;
   position: relative;
 }
-
 .modal__close {
   color: #aaa;
   float: right;
@@ -181,29 +179,31 @@ body {
   font-weight: bold;
   cursor: pointer;
 }
-
-.modal__close:hover,
-.modal__close:focus {
+.modal__close:hover, .modal__close:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
 }
-
 .modal__message {
   margin-bottom: 20px;
   text-align: left;
 }
-
 .modal__title {
-  font-size: 26px;
+  font-size: 32px;
   font-family: "Oswald", sans-serif;
   margin-bottom: 24px;
 }
-
 .modal__info {
   font-size: 22px;
   font-family: "Jost", sans-serif;
   line-height: 30px;
+  margin-bottom: 80px;
+}
+.modal__card-title {
+  font-size: 32px;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 20px;
 }
 
 .swiper {
